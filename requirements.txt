@@ -1,0 +1,10 @@
+firebase-admin
+geopandas==1.1.1
+matplotlib==3.10.3
+matplotlib-inline==0.1.6
+numpy==1.26.4
+pandas>2.0
+plotly==6.2.0
+pycountry==24.6.1
+spacy==3.8.4
+streamlit==1.47.0
