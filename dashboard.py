@@ -80,7 +80,7 @@ if menu == "Homepage":
     st.markdown("---")
 
     st.subheader("🔍 What is this about?")
-    st.write("Inspired by the layered harmony of tiramisu, we recognize three pillars of the gig economy: policy makers who shape the landscape, gig workers who fuel its flexibility, and HR managers who bridge the gap between structure and agility. Designed exclusively for HR leaders, GIRAMISU transforms raw insights into actionable strategies, fostering transparency in hiring practices, accountability in workforce management, and fairness in workplace climates. This is your platform to navigate the complexities of the gig economy with confidence—because inclusive growth begins with empowered decision-making.")
+    st.write("Inspired by the layered harmony of tiramisu, we recognize various stakeholders of the gig economy. For example, policy makers who shape the landscape, gig workers who fuel its flexibility, and HR managers who bridge the gap between structure and agility. Designed with HR professionals, GIRAMISU transforms raw insights into actionable strategies, fostering transparency in hiring practices, accountability in workforce management, and fairness in workplace climates. This is your platform to navigate the complexities of the gig economy with confidence—because inclusive growth begins with empowered decision-making.")
     st.write("Explore. Act. Lead. Because managing gig talent shouldn’t be a guessing game.")
 
     st.subheader("🎥 Watch an Overview Video")
@@ -146,7 +146,7 @@ elif menu == "Global HR Compass":
         data = pd.DataFrame({"Frequency": [364, 277, 251, 220, 184, 166, 166, 152, 141, 134], "HRM Practices": ["Training", "Org.Culture", "Motivation", "Leadership", "Job Design", "HRM", "Comp&Benefits", "Health and Safety", "Selection", "D&I"]})
         # st.bar_chart(data, x = "HRM Practices", y = "Frequency", horizontal = True, color = "HRM Practices")
         colors = ['#21409a','#04adff','#e48873','#f16623','#f44546','#03a8a0','#039c4b','#66d313','#fedf17','#ff0984']
-        fig = px.bar(data, x='Frequency', y='HRM Practices',
+        fig = px.bar(data, x='Occurrence Frequency in Transcripts', y='HRM Practices',
                             color='HRM Practices',
                             color_discrete_sequence=colors[:len(data)],
                             )
