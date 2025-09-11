@@ -146,13 +146,13 @@ elif menu == "Global HR Compass":
         data = pd.DataFrame({"Frequency": [364, 277, 251, 220, 184, 166, 166, 152, 141, 134], "HRM Practices": ["Training", "Org.Culture", "Motivation", "Leadership", "Job Design", "HRM", "Comp&Benefits", "Health and Safety", "Selection", "D&I"]})
         # st.bar_chart(data, x = "HRM Practices", y = "Frequency", horizontal = True, color = "HRM Practices")
         colors = ['#21409a','#04adff','#e48873','#f16623','#f44546','#03a8a0','#039c4b','#66d313','#fedf17','#ff0984']
-        fig = px.bar(data, x='Occurrence Frequency in Transcripts', y='HRM Practices',
+        fig = px.bar(data, x='Frequency', y='HRM Practices',
                             color='HRM Practices',
                             color_discrete_sequence=colors[:len(data)],
                             )
         fig.update_traces(textposition='outside')
         fig.update_layout(
-            xaxis_title='Frequency',
+            xaxis_title='Occurrence Frequency in Transcripts',
             yaxis_title='HRM Practices',
             showlegend=False
         )
